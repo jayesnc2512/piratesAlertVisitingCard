@@ -1,0 +1,46 @@
+.blinker1 {
+    position: relative;
+    left: -8vw;
+    top: -40vh;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.blink-icon {
+    font-size: 4rem;
+    color: white;
+}
+
+.blink-icon svg path:nth-child(2) {
+    font-size: 3rem;
+    animation: blink 1s infinite;
+}
+
+@media (max-width: 768px) {
+    .blinker1 {
+        top: -30vh;
+        left: -4vw;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

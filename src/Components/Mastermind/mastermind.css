@@ -1,0 +1,127 @@
+.past-infringement-mastermind {
+    font-family: 'Raleway';
+    background-color: transparent;
+    /* color: #ffffff; */
+    /* width: 30vw; */
+    left: 10vw;
+    top: -2vh;
+    /* border-radius: 2rem; */
+    z-index: 2;
+    position: relative;
+}
+.seller-video-mastermind {
+    position: relative;
+    /* width:27vw; */
+    border-radius: 2rem;
+    max-height: 80vh;
+    border: none;
+    /* height: fit-content; */
+}
+
+.centered {
+    /* position: absolute; */
+    top: 50%;
+    /* left: 40vw; */
+    transform: translate(0, 25vh);
+    transition: all 1s ease-in-out;
+}
+
+.move-up {
+    /* position: absolute; */
+    top: 10%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    transition: all 1s ease-in-out;
+}
+
+.blinker2-inside-card-1 {
+    background-color: #1e6096b5;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.search-bar {
+    font-size: 1.5rem;
+    padding: 5px 5%;
+    /* width: 100%; */
+}
+
+.seller-cards-container {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    padding: auto 10%;
+}
+
+
+.seller-card {
+    opacity: 0.2;
+    padding: 10px 10%;
+    background-color: #1e6096b5;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+.lock{
+    position: absolute;
+    width:40%;
+    top:30vh;
+    left: 8vw;
+    /* opacity:0.5; */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+.past-infringement-mastermind {
+        all: unset;
+        position: absolute;
+        font-family: 'Raleway';
+        /* background-color: #053e6d; */
+        color: #ffffff;
+        border-radius: 2rem;
+        /* width: 90vw; */
+        /* position: fixed; */
+        top: 10vh;
+        left: -72vw;
+        cursor: default;
+        z-index: 2;
+    }
+
+    .seller-video-mastermind {
+        position: absolute;
+        /* width:27vw; */
+        border-radius: 2rem;
+        max-width: 95vw;
+        max-height: 90vh;
+        border: none;
+        top: -15vh;
+        left: -13vw;
+        justify-content: center;
+        /* height: fit-content; */
+    }
+
+    .button-parent {
+        position: absolute;
+        left: 30vw;
+        top: 32vh;
+        height: 50px;
+        width: 30vw;
+    }
+
+    .button {
+        position: relative;
+        top: 100%;
+        font-weight: 400;
+        justify-content: center;
+    }
+}
